@@ -1,6 +1,5 @@
 // 產出隨機短網址
 // 短網址格式是否為 5 組英數亂碼
-
 const lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz'
 const UpperCaseLetters = lowerCaseLetters.toUpperCase()
 const numbers = '1234567890'
@@ -17,9 +16,8 @@ function randomNumber(count) {
     // 產生亂數 Index // Math.floor(Math.random() * 10) // 0 <= n < 10
     let randomIndex = Math.floor(Math.random() * (max - min + 1)) + min // 0 <= n <= 61
     shortURL += collection[randomIndex]
-    // return shortURL
+    return shortURL
   }
 }
 
-randomNumber(5)
-console.log('global shortURL:', shortURL)
+module.exports = randomNumber(5)
