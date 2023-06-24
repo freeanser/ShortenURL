@@ -9,15 +9,19 @@ collection = lowerCaseLetters + UpperCaseLetters + numbers
 const collectionLength = collection.length
 const max = collectionLength - 1 // 61
 const min = 0
-let shortURL = ''
 
+
+// 依照輸入的短網址長度，產生對應的亂數字串
 function randomNumber(count) {
+  let shortURL = ''
   for (i = 0; i < count; i++) {
     // 產生亂數 Index // Math.floor(Math.random() * 10) // 0 <= n < 10
     let randomIndex = Math.floor(Math.random() * (max - min + 1)) + min // 0 <= n <= 61
     shortURL += collection[randomIndex]
-    return shortURL
+
   }
+  return shortURL
 }
 
-module.exports = randomNumber(5)
+module.exports = randomNumber
+// module.exports = randomNumber()會傳回函式結果，而不是傳回整個函式

@@ -1,5 +1,8 @@
 {{#if shortURL}}
+
+{{!-- show shortenURL here. --}}
 <div class="result">
+  <p class="original"> Original link is here: {{reqURL}} </p>
   <h3>Success! Please use this link:</h3>
   <p id="generatedURL">{{origin}}/{{shortURL}}</p>
 </div>
@@ -13,6 +16,8 @@
       .catch(error => console.log(error))
   }
 </script>
+
+{{!-- set POST form --}}
 {{else}}
 <form action="/" method="POST">
   <div class="container">
