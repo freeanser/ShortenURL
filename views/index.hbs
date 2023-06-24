@@ -7,11 +7,10 @@
   <p id="generatedURL">{{origin}}/{{shortURL}}</p>
 
   <button class="copy" onclick="copy()">Copy</button>
-  <div>
+  <div class="original-link">
     <p class="original"> Original link is here:</p>
     <p class="original">{{reqURL}}</p>
   </div>
-
 </div>
 
 <script>
@@ -27,8 +26,8 @@
 {{else}}
 <form action="/" method="POST">
   <div class="container">
-    <input type="url" name="url" placeholder="Input URL here" required />
-    <button class="shorten" type="submit">Shorten</button>
+    <input type="url" name="url" placeholder="Input URL/Link here" required />
+    <button class="shorten" type="submit">縮短網址 Shorten</button>
   </div>
 </form>
 {{/if}}
