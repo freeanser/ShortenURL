@@ -27,6 +27,8 @@
 {{else}}
 <form action="/" method="POST">
   <div class="container">
+    {{!-- required 代表如果使用者沒有輸入內容，會跳出通知 --}}
+    {{!-- type="url" 會驗證是否輸入的是網址 --}}
     <input type="url" name="url" placeholder="Input URL/Link here" required />
     <button class="shorten" type="submit">縮短網址 Shorten</button>
   </div>

@@ -1,6 +1,5 @@
 // 外部
 const express = require("express")
-// const bodyParser = require('body-parser') //這種寫法較過時
 const exphbs = require("express-handlebars")
 const methodOverride = require('method-override')
 // 內部
@@ -70,6 +69,7 @@ app.post("/", (req, res) => {
     .catch(error => console.error(error))
 })
 
+// 輸入縮短的網址
 app.get('/:shortURL', (req, res) => {
   const { shortURL } = req.params
   // 先去資料庫中找到 shortURL
@@ -88,8 +88,6 @@ app.get('/:shortURL', (req, res) => {
     })
     .catch(error => console.error(error))
 })
-
-
 
 app.listen(port, () => {
   console.log(`Listening on http://localhost:${port}`)
