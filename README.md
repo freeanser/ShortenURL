@@ -1,47 +1,48 @@
-# URL Shortener 短網址產生器
+# URL Shortener
 
-## 介紹
+## Introduction
 
-將長長的網址縮成短短的「短網址產生器」
+The "URL Shortener" is a tool to shorten long URLs.
 
-## 功能
+## Features
 
-- 輸入網址轉換成短網址
-- 點擊按鈕複製網址
-- 透過短網址轉址到原本網址
+- Convert long URLs into short URLs.
+- Click a button to copy the shortened URL.
+- Redirect to the original URL using the short URL.
 
-## 開始使用
+## Getting Started
 
-1. 請先確認有安裝 node.js 與 npm
-2. 將專案 clone 到本地
-3. 在本地開啟之後，透過終端機進入資料夾，輸入：
+1. Make sure you have node.js and npm installed.
+2. Clone the project to your local machine.
+3. After opening it locally, navigate to the project folder using the terminal and enter:
 
    ```bash
    npm install
    ```
 
-4. 安裝完畢後，繼續輸入：
+5. Once the installation is complete, continue by entering:
 
    ```bash
    npm run start
    ```
 
-5. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
+6. If you see this message, it means the application is running successfully. Open your browser and go to the following URL:
 
    ```bash
    Listening on http://localhost:3000
    ```
 
-6. 若欲暫停使用
+7. If you want to pause or stop using the application.
 
    ```bash
    ctrl + c
    ```
 
-## 開發工具
+## Development Tools:
 
 - Node.js 14.16.0
-- Express 4.17.1
-- Express-Handlebars 5.3.3
+- Express 4.16.4
+- Express-Handlebars 3.0.0
+- Body-Parser": 1.20.2
 - MongoDB
-- mongoose 6.0.5
+- mongoose 5.9.7
