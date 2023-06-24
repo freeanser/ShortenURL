@@ -12,12 +12,18 @@ The "URL Shortener" is a tool to shorten long URLs.
 
 ## Getting Started
 
-1. Make sure you have node.js and npm installed.
+1. Make sure you have node.js, express, and npm installed.
 2. Clone the project to your local machine.
 3. After opening it locally, navigate to the project folder using the terminal and enter:
 
    ```bash
    npm install
+   ```
+   ```bash
+   npm install express@4.16.4
+   ```
+   ```bash
+   npm install mongoose@5.9.7
    ```
 
 5. Once the installation is complete, continue by entering:
