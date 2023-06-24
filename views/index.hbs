@@ -2,11 +2,17 @@
 
 {{!-- show shortenURL here. --}}
 <div class="result">
-  <p class="original"> Original link is here: {{reqURL}} </p>
+
   <h3>Success! Please use this link:</h3>
   <p id="generatedURL">{{origin}}/{{shortURL}}</p>
+
+  <button class="copy" onclick="copy()">Copy</button>
+  <div>
+    <p class="original"> Original link is here:</p>
+    <p class="original">{{reqURL}}</p>
+  </div>
+
 </div>
-<button class="copy" onclick="copy()">Copy</button>
 
 <script>
   function copy() {

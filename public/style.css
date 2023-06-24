@@ -20,8 +20,8 @@ img {
   width: 50%;
   text-align: center;
   background-color: salmon;
-  padding: 8px 15px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 10px;
   color: white;
   margin: 10px 0;
 }
@@ -45,6 +45,16 @@ input {
 p#generatedURL {
   color: rgb(109, 109, 255);
   font-weight: bolder;
+}
+
+.original-link {
+  width: 50%;
+  text-align: center;
+  background-color: rgb(142, 136, 237);
+  padding: 8px 15px;
+  border-radius: 5px;
+  /* color: white; */
+  margin: 10px 0;
 }
 
 p.original {
