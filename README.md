@@ -23,7 +23,7 @@ The "URL Shortener" is a tool to shorten long URLs.
 5. Once the installation is complete, continue by entering:
 
    ```bash
-   npm run start
+   npm run dev
    ```
 
 6. If you see this message, it means the application is running successfully. Open your browser and go to the following URL:
