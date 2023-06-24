@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // 連線
-mongoose.connect("mongodb://localhost/url-shortener", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const db = mongoose.connection
 db.on('error', () => {
