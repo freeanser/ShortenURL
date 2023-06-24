@@ -34,6 +34,7 @@ app.get("/", (req, res) => {
   res.render("index")
 })
 
+// 縮短網址
 app.post("/", (req, res) => {
 
   const reqURL = req.body.url

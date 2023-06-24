@@ -7,20 +7,21 @@
   <p id="generatedURL">{{origin}}/{{shortURL}}</p>
 
   <button class="copy" onclick="copy()">Copy</button>
+
+  <script>
+    function copy() {
+      const URL = document.getElementById("generatedURL")
+      navigator.clipboard.writeText(URL.innerText)
+        .then(() => alert('copied'))
+        .catch(error => console.log(error))
+    }
+  </script>
   <div class="original-link">
     <p class="original"> Original link is here:</p>
     <p class="original">{{reqURL}}</p>
   </div>
 </div>
-
-<script>
-  function copy() {
-    const URL = document.getElementById("generatedURL")
-    navigator.clipboard.writeText(URL.innerText)
-      .then(() => alert('copied'))
-      .catch(error => console.log(error))
-  }
-</script>
+<a href="/">Back to home</a>
 
 {{!-- set POST form --}}
 {{else}}
