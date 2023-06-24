@@ -1,3 +1,48 @@
+# URL Shortener
+
+## Introduction
+
+The "URL Shortener" is a tool to shorten long URLs.
+
+## Features
+
+- Convert long URLs into short URLs.
+- Click a button to copy the shortened URL.
+- Redirect to the original URL using the short URL.
+
+## Getting Started
+
+1. Make sure you have node.js and npm installed.
+2. Clone the project to your local machine.
+3. Create your own database.
+- This project has ignored the MONGODB_URI connection due to security and confidentiality reasons.
+- Refer to the format below:
+- MONGODB_URI=mongodb+srv://username:password@mongodb-hostname/database-name?retryWrites=true&w=majority
+
+4. After opening it locally, navigate to the project folder using the terminal and enter:
+
+   ```bash
+   npm install
+   ```
+   5. Once the installation is complete, continue by entering:
+
+   ```bash
+   npm run dev
+   ```
+
+   6. If you see this message, it means the application is running successfully. Open your browser and go to the following URL:
+
+   ```bash
+   Listening on http://localhost:3000
+   ```
+
+7. If you want to pause or stop using the application.
+
+   ```bash
+   ctrl + c
+   ```
+
+## Development Tools:
 
 - Node.js 14.16.0
 - Express 4.16.4
